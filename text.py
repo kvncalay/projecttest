@@ -1,7 +1,7 @@
-def Ceyhun(self,name,surname):
+def Ceyhun(name,surname):
     name = name
     surname = surname
 
 
 
-Ceyhun()
+print(name)
