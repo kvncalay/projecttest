@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: content-box;
+    }
+    html {
+      scroll-behavior: smooth;
+      transition: .8s;
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+      height: 100%;
+      margin: 0;
+    }
+    main {
+      height: 500px;
+    }
+    .showcase {
+      background-image: url(XaGBLm.jpg);
+      padding: 10px;
+      background-color: #a2b9bc;
+      height: 100%;
+      color: #fff;
+      background-position: top;
+    }
+    .showcase h1 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% -50%);
+      margin: 0;
+      position: absolute;
+    }
+
+    .main-nav {
+      display: inline-block;
+      text-align: right;
+      width: 89%;
+    }
+    .main_nav__item a {
+      text-decoration: none;
+    }
+    .main-header {
+      position: fixed;
+      width: 100%;
+      background-color: #fefbd8;
+    }
+    .main_nav__items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .main_nav__item {
+      margin: 0 7px;
+      display: inline-block;
+      top: -3%;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(31, 0, 103);
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .main-header__logo {
+      font-weight: bold;
+      padding-left: 9px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(31, 0, 103);
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .main_nav__item a:hover {
+      color: #a2b9bc;
+      cursor: crosshair;
+    }
+    .main_nav__item::before {
+      content: "\2022";
+    }
+    .main_nav__item:hover {
+      color: #a2b9bc;
+    }
+    .main_nav__item--login {
+      border: 4px solid rgb(83, 23, 2);
+      border-radius: 8px;
+      background-color: chocolate;
+    }
+    .main_nav__item--login:hover {
+      color: rgb(0, 0, 0);
+      background-color: rgb(80, 197, 255);
+    }
+    .main_nav__item--login::before {
+      content: none;
+    }
+    .how-it-works {
+      padding: 10px;
+      text-align: center;
+    }
+    .how-it-works h2 {
+      color: #3e4555;
+      font-size: 30px;
+    }
+    .col-3 {
+      display: inline-block;
+      width: 30%;
+      padding: 16px;
+      margin: 5px;
+    }
+    .icon-box h3 {
+      color: cornflowerblue;
+      font-size: 30px;
+    }
+    .icon-box h3::first-letter {
+      color: darkorange;
+      font-size: 48px;
+    }
+    .icon-box i {
+      color: #fc997c;
+    }
+    .col-2 {
+      display: inline-block;
+      width: calc(50% - 2px);
+      height: 350px;
+      background-color: rgb(204, 255, 255);
+      vertical-align: top;
+    }
+    .opencase {
+      background-color: #fc997c;
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .opencase:hover {
+      background-color: #fff;
+      color: #fc997c;
+      cursor: pointer;
+    }
+    .features__left {
+      background-image: url(cscs.jpg);
+      background-size: cover;
+    }
+    .section-titles {
+      text-align: center;
+    }
+    .plan {
+      background-color: aliceblue;
+      text-align: center;
+      float: left;
+      width: 30%;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    .clearfix:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .container {
+      margin: 0 auto;
+      width: 1000px;
+    }
+    .plan-badge {
+      background-color: #ffffff;
+      color: cornflowerblue;
+      border: 5px solid #fc997c;
+      border-radius: 8px;
+
+    }
+   
+    .rec {
+      transition: .6s;
+      background-color: cornflowerblue;
+      color: white;
+    }
+    .rec:hover {
+      box-shadow: 3px 3px 5px 5px black;
+    }
+    #backtotop {
+      bottom: 10px;
+      right: 10px;
+      position: fixed;
+    }
+    #backtotop i {
+      font-size: 35px;
+      color: #fc997c;
+    }
+  </style>
+  <body id="body">
+    <header class="main-header">
+      <a href="#" class="main-header__logo">Alay Bets</a>
+      <nav class="main-nav">
+        <ul class="main_nav__items">
+          <li class="main_nav__item"><a href="#">Rulet</a></li>
+          <li class="main_nav__item"><a href="#">Paketler</a></li>
+          <li class="main_nav__item"><a href="#">İletişim</a></li>
+          <li class="main_nav__item main_nav__item--login">
+            <a href="#">Giriş yapın</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <h1>The top earning site in the world!</h1>
+      </section>
+      <section class="how-it-works">
+        <h2>Thank you for visiting..</h2>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            aliquid doloribus temporibus magnam!
+          </p>
+        </div>
+        <div class="row">
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-gun fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              voluptate similique sint quae non numquam.
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose to Plan</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              voluptate similique sint quae non numquam.
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-dollar-sign fa-3x"></i>
+            <h3>Enjoy the Earning</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              voluptate similique sint quae non numquam.
+            </p>
+          </div>
+        <div>
+          
+        </div>
+      </section>
+      <section class="row">
+        <div class="col-2 features__left">
+         <div class="cover">
+
+         </div>
+      </div>
+      <div class="col-2 features__right">
+        <h4>Get the best designs with the cheapest price guarantee.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maiores odio autem non ipsam. Nam dolores tenetur placeat debitis illum perspiciatis sequi fugit maiores. Fuga quidem recusandae tenetur laboriosam eos.</p>
+        <button type="submit" class="opencase">Open Case</button>         
+      </div>
+      
+      </section>
+      <section class="plans">
+          <h3 class="section-titles">Become A Member</h3>
+          <div class=" container clearfix">
+          <div class="plan">
+        <h4>Free</h4>
+        <h4>0$/Month</h4>
+        <ul>
+          <li>Free Case</li>
+          <li>Not Download</li>
+          <li>SD Quality</li>
+          <li>Screen Your Watch</li>
+          <li>Ads</li>
+          <li>First Month Free</li>
+        </ul>
+        <button type="submit" class="plan-btn">Choose Plan</button>
+        </div>
+        <div class="plan rec">
+          <h4>Basic</h4>
+          <h4>9.99$/Month</h4>
+          <h4 class="plan-badge">Recommended</h4>
+          <ul>
+          <li>Free Case</li>
+          <li>Download and Watch Offline</li>
+          <li>FHD Quality</li>
+          <li>Screen Your Watch</li>
+          <li>No Ads</li>
+          <li>First Month Free</li>
+        </ul>
+        <button type="submit" class="plan-btn">Choose Plan</button>
+        </div>
+        <div class="plan">
+          <ul>
+            <h4>Premium</h4>
+            <h4>19.99$/Month</h4>
+            <li>Free Case</li>
+            <li>Download and Watch Offline</li>
+            <li>QHD Quality</li>
+            <li>Screen Your Watch</li>
+            <li>No Ads</li>
+            <li>First Month Free</li>
+          </ul>
+          <button type="submit" class="plan-btn">Choose Plan</button>
+        </div>
+      </section>
+      <a href="#body" id="backtotop">
+        <i class="fas fa-chevron-circle-up"></i>
+      </a>   
+    </main>
+  </body>
+
+</html>
